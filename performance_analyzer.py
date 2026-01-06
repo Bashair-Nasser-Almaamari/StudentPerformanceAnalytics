@@ -78,9 +78,10 @@ if __name__ == "__main__":
         {'name': 'Sara', 'scores': [45, 38, 42, 35]},
         {'name': 'Mohammed', 'scores': [55, 62, 58, 65]},
         {'name': 'Fatima', 'scores': [72, 85, 68, 75]},
-        {'name': 'Ali', 'scores': [48, 52, 45, 55]},
+        {'name': 'Ali', 'scores': [48, 52, 45, 55, 60]},  # Added one more score
         {'name': 'Maryam', 'scores': []}
     ]
     
     # Run analysis
+
     results = analyze_student_performance(students)
