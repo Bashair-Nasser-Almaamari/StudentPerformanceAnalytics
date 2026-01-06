@@ -34,11 +34,11 @@ def analyze_student_performance(student_list):
             average_score = 0
         
         # Classify student based on average (IF-ELSE STRUCTURE)
-        if average_score < 50:
+        if average_score < 45:  # Changed threshold from 50 to 45
             student['status'] = "At Risk"
             student['average'] = average_score
             at_risk_count = at_risk_count + 1
-        elif average_score >= 50 and average_score < 70:
+        elif average_score >= 45 and average_score < 70:  # Adjusted threshold
             student['status'] = "Satisfactory"
             student['average'] = average_score
             satisfactory_count = satisfactory_count + 1
@@ -85,3 +85,4 @@ if __name__ == "__main__":
     # Run analysis
 
     results = analyze_student_performance(students)
+
